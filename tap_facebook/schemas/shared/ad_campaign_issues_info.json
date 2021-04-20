@@ -1,0 +1,44 @@
+{
+  "type": [
+    "null",
+    "array"
+  ],
+  "items": {
+    "type": [
+      "null",
+      "object"
+    ],
+    "properties": {
+      "error_code": {
+        "type": [
+          "null",
+          "integer"
+        ]
+      },
+      "error_message": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "error_summary": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "error_type": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "level": {
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    }
+  }
+}

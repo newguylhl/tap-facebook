@@ -1,17 +1,9 @@
 {
+  "type": [
+    "null",
+    "object"
+  ],
   "properties": {
-    "name": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "objective": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
     "id": {
       "type": [
         "null",
@@ -24,10 +16,40 @@
         "string"
       ]
     },
-    "effective_status": {
+    "ad_strategy_id": {
       "type": [
         "null",
         "string"
+      ]
+    },
+    "adlabels": {
+      "$ref": "ad_label.json"
+    },
+    "bid_strategy": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "boosted_object_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "brand_lift_studies": {
+      "$ref": "ad_study.json"
+    },
+    "budget_rebalance_flag": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "budget_remaining": {
+      "type": [
+        "null",
+        "number"
       ]
     },
     "buying_type": {
@@ -36,6 +58,137 @@
         "string"
       ]
     },
+    "can_create_brand_lift_study": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "can_use_spend_cap": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "configured_status": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "created_time": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "daily_budget": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "effective_status": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "is_skadnetwork_attribution": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "issues_info": {
+      "$ref": "ad_campaign_issues_info.json"
+    },
+    "last_budget_toggling_time": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "lifetime_budget": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "objective": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "pacing_type": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    },
+    "promoted_object": {
+      "$ref": "ad_promoted_object.json"
+    },
+    "recommendations": {
+      "$ref": "ad_recommendation.json"
+    },
+    "smart_promotion_type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "source_campaign_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "special_ad_categories": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    },
+    "special_ad_category": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "special_ad_category_country": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    },
     "spend_cap": {
       "type": [
         "null",
@@ -43,56 +196,37 @@
       ]
     },
     "start_time": {
-      "type": "string",
-      "format": "date-time"
-    },
-    "updated_time": {
-      "type": "string",
-      "format": "date-time"
-    },
-    "ads": {
-      "properties": {
-        "data": {
-          "items": {
-            "properties": {
-              "id": {
-                "type": [
-                  "null",
-                  "string"
-                ]
-              }
-            },
-            "type": [
-              "null",
-              "object"
-            ]
-          },
-          "type": [
-            "null",
-            "array"
-          ]
-        }
-      },
       "type": [
         "null",
-        "object"
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "status": {
+      "type": [
+        "null",
+        "string"
       ]
     },
-    "adlabels": {
-      "type": ["null", "array"],
-      "items": {
-        "type": "object",
-        "properties": {
-          "id": {"type": "string"},
-          "name": {"type": "string"},
-          "created_time": {"type": "string", "format": "date-time"},
-          "updated_time": {"type": "string", "format": "date-time"}
-        }
-      }
+    "stop_time": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "topline_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "updated_time": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
     }
-  },
-  "type": [
-    "null",
-    "object"
-  ]
+  }
 }

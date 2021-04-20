@@ -413,6 +413,24 @@
     },
     "website_purchase_roas": {
       "$ref": "ads_action_stats.json"
+    },
+    "publisher_platform": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "platform_position": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "impression_device": {
+      "type": [
+        "null",
+        "string"
+      ]
     }
   }
 }

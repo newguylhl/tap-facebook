@@ -1,0 +1,82 @@
+{
+  "definitions": {
+    "type": [
+      "null",
+      "array"
+    ],
+    "targeting_fields": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "interests": {
+          "$ref": "targeting_id_name_pairs.json#/definitions/template"
+        },
+        "behaviors": {
+          "$ref": "targeting_id_name_pairs.json#/definitions/template"
+        },
+        "relationship_statuses": {
+          "type": [
+            "null",
+            "array"
+          ],
+          "items": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          }
+        },
+        "life_events": {
+          "$ref": "targeting_id_name_pairs.json#/definitions/template"
+        },
+        "industries": {
+          "$ref": "targeting_id_name_pairs.json#/definitions/template"
+        },
+        "income": {
+          "$ref": "targeting_id_name_pairs.json#/definitions/template"
+        },
+        "family_statuses": {
+          "$ref": "targeting_id_name_pairs.json#/definitions/template"
+        },
+        "education_schools": {
+          "$ref": "targeting_id_name_pairs.json#/definitions/template"
+        },
+        "education_statuses": {
+          "type": [
+            "null",
+            "array"
+          ],
+          "items": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          }
+        },
+        "college_years": {
+          "type": [
+            "null",
+            "array"
+          ],
+          "items": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          }
+        },
+        "education_majors": {
+          "$ref": "targeting_id_name_pairs.json#/definitions/template"
+        },
+        "work_employers": {
+          "$ref": "targeting_id_name_pairs.json#/definitions/template"
+        },
+        "work_positions": {
+          "$ref": "targeting_id_name_pairs.json#/definitions/template"
+        }
+      }
+    }
+  }
+}

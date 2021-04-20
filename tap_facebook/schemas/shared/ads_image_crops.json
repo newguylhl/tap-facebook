@@ -1,134 +1,46 @@
 {
-  "properties": {
-    "100x100": {
+  "definitions": {
+    "template": {
+      "type": [
+        "null",
+        "array"
+      ],
       "items": {
+        "type": [
+          "null",
+          "array"
+        ],
         "items": {
           "type": [
             "null",
             "integer"
           ]
-        },
-        "type": [
-          "null",
-          "array"
-        ]
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "100x72": {
-      "items": {
-        "items": {
-          "type": [
-            "null",
-            "integer"
-          ]
-        },
-        "type": [
-          "null",
-          "array"
-        ]
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "191x100": {
-      "items": {
-        "items": {
-          "type": [
-            "null",
-            "integer"
-          ]
-        },
-        "type": [
-          "null",
-          "array"
-        ]
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "400x150": {
-      "items": {
-        "items": {
-          "type": [
-            "null",
-            "integer"
-          ]
-        },
-        "type": [
-          "null",
-          "array"
-        ]
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "400x500": {
-      "items": {
-        "items": {
-          "type": [
-            "null",
-            "integer"
-          ]
-        },
-        "type": [
-          "null",
-          "array"
-        ]
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "600x360": {
-      "items": {
-        "items": {
-          "type": [
-            "null",
-            "integer"
-          ]
-        },
-        "type": [
-          "null",
-          "array"
-        ]
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "90x160": {
-      "items": {
-        "items": {
-          "type": [
-            "null",
-            "integer"
-          ]
-        },
-        "type": [
-          "null",
-          "array"
-        ]
-      },
-      "type": [
-        "null",
-        "array"
-      ]
+        }
+      }
     }
   },
   "type": [
     "null",
     "object"
-  ]
+  ],
+  "properties": {
+    "100x100": {
+      "$ref": "ads_image_crops.json#/definitions/template"
+    },
+    "100x72": {
+      "$ref": "ads_image_crops.json#/definitions/template"
+    },
+    "400x150": {
+      "$ref": "ads_image_crops.json#/definitions/template"
+    },
+    "400x500": {
+      "$ref": "ads_image_crops.json#/definitions/template"
+    },
+    "600x360": {
+      "$ref": "ads_image_crops.json#/definitions/template"
+    },
+    "90x160": {
+      "$ref": "ads_image_crops.json#/definitions/template"
+    }
+  }
 }

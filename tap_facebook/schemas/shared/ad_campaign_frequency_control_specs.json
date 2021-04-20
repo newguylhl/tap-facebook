@@ -1,0 +1,32 @@
+{
+  "type": [
+    "null",
+    "array"
+  ],
+  "items": {
+    "type": [
+      "null",
+      "object"
+    ],
+    "properties": {
+      "event": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "interval_days": {
+        "type": [
+          "null",
+          "integer"
+        ]
+      },
+      "max_frequency": {
+        "type": [
+          "null",
+          "integer"
+        ]
+      }
+    }
+  }
+}

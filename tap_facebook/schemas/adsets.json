@@ -4,75 +4,6 @@
     "object"
   ],
   "properties": {
-    "name": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "end_time": {
-      "type": [
-        "null",
-        "string"
-      ],
-      "format": "date-time"
-    },
-    "promoted_object": {
-      "type": [
-        "null",
-        "object"
-      ],
-      "properties": {
-        "custom_event_type": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "pixel_id": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "pixel_rule": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "page_id": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "object_store_url": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "application_id": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "product_set_id": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "offer_id": {
-          "type": [
-            "null",
-            "string"
-          ]
-        }
-      }
-    },
     "id": {
       "type": [
         "null",
@@ -85,42 +16,118 @@
         "string"
       ]
     },
-    "updated_time": {
+    "adlabels": {
+      "$ref": "ad_label.json"
+    },
+    "adset_schedule": {
       "type": [
         "null",
-        "string"
+        "array"
       ],
-      "format": "date-time"
+      "items": {
+        "type": [
+          "null",
+          "object"
+        ],
+        "properties": {
+          "start_minute": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "end_minute": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "days": {
+            "type": [
+              "array"
+            ],
+            "items": {
+              "type": [
+                "integer"
+              ]
+            }
+          }
+        }
+      }
     },
-    "daily_budget": {
-      "type": [
-        "null",
-        "number"
-      ],
-      "maximum": 100000000000000000000000000000000,
-      "minimum": -100000000000000000000000000000000,
-      "multipleOf": 0.000001,
-      "exclusiveMaximum": true,
-      "exclusiveMinimum": true
-    },
-    "budget_remaining": {
-      "type": [
-        "null",
-        "number"
-      ],
-      "maximum": 100000000000000000000000000000000,
-      "minimum": -100000000000000000000000000000000,
-      "multipleOf": 0.000001,
-      "exclusiveMaximum": true,
-      "exclusiveMinimum": true
-    },
-    "effective_status": {
+    "asset_feed_id": {
       "type": [
         "null",
         "string"
       ]
     },
+    "attribution_spec": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    },
+    "bid_adjustments": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "bid_amount": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "bid_constraints": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "bid_info": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "bid_strategy": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "billing_event": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "budget_remaining": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
     "campaign_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "configured_status": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "contextual_bundling_spec": {
       "type": [
         "null",
         "string"
@@ -133,6 +140,166 @@
       ],
       "format": "date-time"
     },
+    "creative_sequence": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    },
+    "daily_budget": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "daily_min_spend_target": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "daily_spend_cap": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "destination_type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "effective_status": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "end_time": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "frequency_control_specs": {
+      "$ref": "ad_campaign_frequency_control_specs.json"
+    },
+    "instagram_actor_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "is_dynamic_creative": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "issues_info": {
+      "$ref": "ad_campaign_issues_info.json"
+    },
+    "learning_stage_info": {
+      "$ref": "ad_campaign_learning_stage_info.json"
+    },
+    "lifetime_budget": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "lifetime_imps": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "lifetime_min_spend_target": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "lifetime_spend_cap": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "multi_optimization_goal_weight": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "optimization_goal": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "optimization_sub_event": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "pacing_type": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    },
+    "promoted_object": {
+      "$ref": "ad_promoted_object.json"
+    },
+    "recommendations": {
+      "$ref": "ad_recommendation.json"
+    },
+    "recurring_budget_semantics": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "review_feedback": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "rf_prediction_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "source_adset_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
     "start_time": {
       "type": [
         "null",
@@ -140,61 +307,39 @@
       ],
       "format": "date-time"
     },
-    "lifetime_budget": {
+    "status": {
       "type": [
         "null",
-        "number"
-      ],
-      "maximum": 100000000000000000000000000000000,
-      "minimum": -100000000000000000000000000000000,
-      "multipleOf": 0.000001,
-      "exclusiveMaximum": true,
-      "exclusiveMinimum": true
+        "string"
+      ]
     },
-    "targeting": { "$ref": "targeting.json"},
-    "bid_info": {
+    "targeting": {
+      "$ref": "targeting.json"
+    },
+    "time_based_ad_rotation_id_blocks": {
       "type": [
         "null",
-        "object"
-      ],
-      "properties": {
-        "CLICKS": {
-          "type": [
-            "null",
-            "integer"
-          ]
-        },
-        "ACTIONS": {
-          "type": [
-            "null",
-            "integer"
-          ]
-        },
-        "IMPRESSIONS": {
-          "type": [
-            "null",
-            "integer"
-          ]
-        },
-        "REACH": {
-          "type": [
-            "null",
-            "integer"
-          ]
-        }
-      }
+        "string"
+      ]
     },
-    "adlabels": {
-      "type": ["null", "array"],
-      "items": {
-        "type": "object",
-        "properties": {
-          "id": {"type": "string"},
-          "name": {"type": "string"},
-          "created_time": {"type": "string", "format": "date-time"},
-          "updated_time": {"type": "string", "format": "date-time"}
-        }
-      }
+    "time_based_ad_rotation_intervals": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "updated_time": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "use_new_app_click": {
+      "type": [
+        "null",
+        "boolean"
+      ]
     }
   }
 }

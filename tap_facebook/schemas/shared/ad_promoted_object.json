@@ -4,129 +4,101 @@
     "object"
   ],
   "properties": {
-    "id": {
+    "application_id": {
       "type": [
         "null",
         "string"
       ]
     },
-    "account_id": {
+    "custom_conversion_id": {
       "type": [
         "null",
         "string"
       ]
     },
-    "ad_review_feedback": {
+    "custom_event_str": {
       "type": [
         "null",
         "string"
       ]
     },
-    "adlabels": {
-      "$ref": "ad_label.json"
-    },
-    "adset_id": {
+    "custom_event_type": {
       "type": [
         "null",
         "string"
       ]
     },
-    "bid_amount": {
-      "type": [
-        "null",
-        "integer"
-      ]
-    },
-    "campaign_id": {
+    "event_id": {
       "type": [
         "null",
         "string"
       ]
     },
-    "configured_status": {
+    "object_store_url": {
       "type": [
         "null",
         "string"
       ]
     },
-    "conversion_domain": {
+    "offer_id": {
       "type": [
         "null",
         "string"
       ]
     },
-    "created_time": {
-      "type": [
-        "null",
-        "string"
-      ],
-      "format": "date-time"
-    },
-    "creative": {
-      "type": [
-        "null",
-        "object"
-      ],
-      "properties": {
-        "id": {
-          "type": [
-            "null",
-            "string"
-          ]
-        }
-      }
-    },
-    "effective_status": {
+    "offline_conversion_data_set_id": {
       "type": [
         "null",
         "string"
       ]
     },
-    "issues_info": {
-      "$ref": "ad_campaign_issues_info.json"
-    },
-    "last_updated_by_app_id": {
+    "page_id": {
       "type": [
         "null",
         "string"
       ]
     },
-    "name": {
+    "pixel_aggregation_rule": {
       "type": [
         "null",
         "string"
       ]
     },
-    "preview_shareable_link": {
+    "pixel_id": {
       "type": [
         "null",
         "string"
       ]
     },
-    "recommendations": {
-      "$ref": "ad_recommendation.json"
-    },
-    "source_ad_id": {
+    "pixel_rule": {
       "type": [
         "null",
         "string"
       ]
     },
-    "status": {
+    "place_page_set_id": {
       "type": [
         "null",
         "string"
       ]
     },
-    "tracking_specs": {
-      "$ref": "conversion_action_query.json"
-    },
-    "updated_time": {
+    "product_catalog_id": {
       "type": [
         "null",
         "string"
-      ],
-      "format": "date-time"
+      ]
+    },
+    "product_set_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "retention_days": {
+      "type": [
+        "null",
+        "string"
+      ]
     }
   }
 }

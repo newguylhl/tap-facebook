@@ -413,6 +413,18 @@
     },
     "website_purchase_roas": {
       "$ref": "ads_action_stats.json"
+    },
+    "age": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "gender": {
+      "type": [
+        "null",
+        "string"
+      ]
     }
   }
 }

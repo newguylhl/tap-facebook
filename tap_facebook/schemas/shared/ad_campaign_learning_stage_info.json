@@ -1,0 +1,38 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "attribution_windows": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    },
+    "conversions": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "last_sig_edit_ts": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "status": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

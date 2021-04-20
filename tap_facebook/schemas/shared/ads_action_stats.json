@@ -15,7 +15,7 @@
           "number"
         ]
       },
-      "7d_click": {
+      "1d_view": {
         "type": [
           "null",
           "number"
@@ -27,7 +27,13 @@
           "number"
         ]
       },
-      "1d_view": {
+      "28d_view": {
+        "type": [
+          "null",
+          "number"
+        ]
+      },
+      "7d_click": {
         "type": [
           "null",
           "number"
@@ -39,13 +45,37 @@
           "number"
         ]
       },
-      "28d_view": {
+      "action_canvas_component_name": {
         "type": [
           "null",
-          "number"
+          "string"
+        ]
+      },
+      "action_carousel_card_id": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "action_carousel_card_name": {
+        "type": [
+          "null",
+          "string"
         ]
       },
       "action_destination": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "action_device": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "action_reaction": {
         "type": [
           "null",
           "string"
@@ -61,6 +91,30 @@
         "type": [
           "null",
           "string"
+        ]
+      },
+      "action_video_sound": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "action_video_type": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "dda": {
+        "type": [
+          "null",
+          "number"
+        ]
+      },
+      "inline": {
+        "type": [
+          "null",
+          "number"
         ]
       },
       "value": {

@@ -1,0 +1,53 @@
+{
+  "type": [
+    "null",
+    "array"
+  ],
+  "items": {
+    "type": "object",
+    "properties": {
+      "blame_field": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "code": {
+        "type": [
+          "null",
+          "integer"
+        ]
+      },
+      "confidence": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "importance": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "message": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "recommendation_data": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "title": {
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    }
+  }
+}

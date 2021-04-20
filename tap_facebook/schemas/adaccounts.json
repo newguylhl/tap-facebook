@@ -1,0 +1,393 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "account_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "account_status": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "ad_account_promotable_objects": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "age": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "agency_client_declaration": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "amount_spent": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "attribution_spec": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "balance": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "business": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "business_city": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "business_country_code": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "business_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "business_state": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "business_street": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "business_street2": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "business_zip": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "can_create_brand_lift_study": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "capabilities": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    },
+    "created_time": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "currency": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "direct_deals_tos_accepted": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "disable_reason": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "end_advertiser": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "end_advertiser_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "extended_credit_invoice_group": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "failed_delivery_checks": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "fb_entity": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "funding_source": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "funding_source_details": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "has_migrated_permissions": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "has_page_authorized_adaccount": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "io_number": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "is_attribution_spec_system_default": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "is_direct_deals_enabled": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "is_in_3ds_authorization_enabled_market": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "is_in_middle_of_local_entity_migration": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "is_notifications_enabled": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "is_personal": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "is_prepay_account": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "is_tax_id_required": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "line_numbers": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "integer"
+        ]
+      }
+    },
+    "media_agency": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "min_campaign_group_spend_cap": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "min_daily_budget": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "offsite_pixels_tos_accepted": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "owner": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "partner": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "rf_spec": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "show_checkout_experience": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "spend_cap": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "tax_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "tax_id_status": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "tax_id_type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "timezone_id": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "timezone_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "timezone_offset_hours_utc": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "tos_accepted": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "user_tasks": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    },
+    "user_tos_accepted": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

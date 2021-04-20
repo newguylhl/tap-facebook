@@ -1,0 +1,55 @@
+{
+  "definitions": {
+    "type": [
+      "null",
+      "array"
+    ],
+    "targeting_fields": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "connections": {
+          "$ref": "targeting_id_name_pairs.json#/definitions/template"
+        },
+        "excluded_connections": {
+          "$ref": "targeting_id_name_pairs.json#/definitions/template"
+        },
+        "user_adclusters": {
+          "$ref": "targeting_id_name_pairs.json#/definitions/template"
+        },
+        "friends_of_connections": {
+          "$ref": "targeting_id_name_pairs.json#/definitions/template"
+        },
+        "home_value": {
+          "$ref": "targeting_id_name_pairs.json#/definitions/template"
+        },
+        "interested_in": {
+          "$ref": "targeting_id_name_pairs.json#/definitions/template"
+        },
+        "household_composition": {
+          "$ref": "targeting_id_name_pairs.json#/definitions/template"
+        },
+        "home_type": {
+          "$ref": "targeting_id_name_pairs.json#/definitions/template"
+        },
+        "moms": {
+          "$ref": "targeting_id_name_pairs.json#/definitions/template"
+        },
+        "net_worth": {
+          "$ref": "targeting_id_name_pairs.json#/definitions/template"
+        },
+        "generation": {
+          "$ref": "targeting_id_name_pairs.json#/definitions/template"
+        },
+        "home_ownership": {
+          "$ref": "targeting_id_name_pairs.json#/definitions/template"
+        },
+        "politics": {
+          "$ref": "targeting_id_name_pairs.json#/definitions/template"
+        }
+      }
+    }
+  }
+}

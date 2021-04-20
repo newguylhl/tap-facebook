@@ -1,23 +1,9 @@
 {
+  "type": [
+    "null",
+    "object"
+  ],
   "properties": {
-    "body": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "object_story_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "image_url": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
     "id": {
       "type": [
         "null",
@@ -37,29 +23,7 @@
       ]
     },
     "adlabels": {
-      "type": [
-        "null",
-        "array"
-      ],
-      "items": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "created_time": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "name": {
-            "type": "string"
-          },
-          "updated_time": {
-            "type": "string",
-            "format": "date-time"
-          }
-        }
-      }
+      "$ref": "ad_label.json"
     },
     "applink_treatment": {
       "type": [
@@ -67,7 +31,73 @@
         "string"
       ]
     },
+    "asset_feed_spec": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "authorization_category": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "body": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "branded_content_sponsor_page_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "bundle_folder_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
     "call_to_action_type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "categorization_criteria": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "category_media_source": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "destination_set_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "dynamic_ad_voice": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "effective_authorization_category": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "effective_instagram_media_id": {
       "type": [
         "null",
         "string"
@@ -85,19 +115,36 @@
         "string"
       ]
     },
-    "title": {
+    "enable_direct_install": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "enable_launch_instant_app": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "image_crops": {
       "type": [
         "null",
         "string"
       ]
     },
-    "name": {
+    "image_hash": {
       "type": [
         "null",
         "string"
       ]
     },
-    "image_crops": {"$ref": "ads_image_crops.json"},
+    "image_url": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
     "instagram_actor_id": {
       "type": [
         "null",
@@ -116,13 +163,55 @@
         "string"
       ]
     },
+    "instagram_user_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "interactive_components_spec": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "link_destination_display_url": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
     "link_og_id": {
       "type": [
         "null",
         "string"
       ]
     },
+    "link_url": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "messenger_sponsored_message": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
     "object_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "object_store_url": {
       "type": [
         "null",
         "string"
@@ -135,1135 +224,9 @@
       ]
     },
     "object_story_spec": {
-      "properties": {
-        "page_id": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "instagram_actor_id": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "link_data": {
-          "properties": {
-            "additional_image_index": {
-              "type": [
-                "null",
-                "integer"
-              ]
-            },
-            "app_link_spec": {
-              "type": [
-                "null",
-                "object"
-              ],
-              "properties": {
-                "android": {
-                  "type": [
-                    "null",
-                    "array"
-                  ],
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "app_name": {
-                        "type": "string"
-                      },
-                      "class": {
-                        "type": "string"
-                      },
-                      "package": {
-                        "type": "string"
-                      },
-                      "url": {
-                        "type": "string"
-                      }
-                    }
-                  }
-                },
-                "ios": {
-                  "type": [
-                    "null",
-                    "array"
-                  ],
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "app_name": {
-                        "type": "string"
-                      },
-                      "app_store_id": {
-                        "type": "string"
-                      },
-                      "url": {
-                        "type": "string"
-                      }
-                    }
-                  }
-                },
-                "ipad": {
-                  "type": [
-                    "null",
-                    "array"
-                  ],
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "app_name": {
-                        "type": "string"
-                      },
-                      "app_store_id": {
-                        "type": "string"
-                      },
-                      "url": {
-                        "type": "string"
-                      }
-                    }
-                  }
-                },
-                "iphone": {
-                  "type": [
-                    "null",
-                    "array"
-                  ],
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "app_name": {
-                        "type": "string"
-                      },
-                      "app_store_id": {
-                        "type": "string"
-                      },
-                      "url": {
-                        "type": "string"
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "attachment_style": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "branded_content_sponsor_page_id": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "branded_content_sponsor_relationship": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "call_to_action": {
-              "properties": {
-                "value": {
-                  "properties": {
-                    "app_destination": {
-                      "type": [
-                        "null",
-                        "string"
-                      ]
-                    },
-                    "app_link": {
-                      "type": [
-                        "null",
-                        "string"
-                      ]
-                    },
-                    "application": {
-                      "type": [
-                        "null",
-                        "string"
-                      ]
-                    },
-                    "event_id": {
-                      "type": [
-                        "null",
-                        "string"
-                      ]
-                    },
-                    "lead_gen_form_id": {
-                      "type": [
-                        "null",
-                        "string"
-                      ]
-                    },
-                    "link": {
-                      "type": [
-                        "null",
-                        "string"
-                      ]
-                    },
-                    "link_caption": {
-                      "type": [
-                        "null",
-                        "string"
-                      ]
-                    },
-                    "link_format": {
-                      "type": [
-                        "null",
-                        "string"
-                      ]
-                    },
-                    "page": {
-                      "type": [
-                        "null",
-                        "string"
-                      ]
-                    },
-                    "product_link": {
-                      "type": [
-                        "null",
-                        "string"
-                      ]
-                    }
-                  },
-                  "type": [
-                    "null",
-                    "object"
-                  ]
-                },
-                "type": {
-                  "type": [
-                    "null",
-                    "string"
-                  ]
-                }
-              },
-              "type": [
-                "null",
-                "object"
-              ]
-            },
-            "caption": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "child_attachments": {
-              "items": {
-                "properties": {
-                  "image_hash": {
-                    "type": [
-                      "null",
-                      "string"
-                    ]
-                  },
-                  "link": {
-                    "type": [
-                      "null",
-                      "string"
-                    ]
-                  },
-                  "call_to_action": {
-                    "properties": {
-                      "value": {
-                        "properties": {
-                          "app_destination": {
-                            "type": [
-                              "null",
-                              "string"
-                            ]
-                          },
-                          "app_link": {
-                            "type": [
-                              "null",
-                              "string"
-                            ]
-                          },
-                          "application": {
-                            "type": [
-                              "null",
-                              "string"
-                            ]
-                          },
-                          "event_id": {
-                            "type": [
-                              "null",
-                              "string"
-                            ]
-                          },
-                          "lead_gen_form_id": {
-                            "type": [
-                              "null",
-                              "string"
-                            ]
-                          },
-                          "link": {
-                            "type": [
-                              "null",
-                              "string"
-                            ]
-                          },
-                          "link_caption": {
-                            "type": [
-                              "null",
-                              "string"
-                            ]
-                          },
-                          "link_format": {
-                            "type": [
-                              "null",
-                              "string"
-                            ]
-                          },
-                          "page": {
-                            "type": [
-                              "null",
-                              "string"
-                            ]
-                          },
-                          "product_link": {
-                            "type": [
-                              "null",
-                              "string"
-                            ]
-                          }
-                        },
-                        "type": [
-                          "null",
-                          "object"
-                        ]
-                      },
-                      "type": {
-                        "type": [
-                          "null",
-                          "string"
-                        ]
-                      }
-                    },
-                    "type": [
-                      "null",
-                      "object"
-                    ]
-                  },
-                  "caption": {
-                    "type": [
-                      "null",
-                      "string"
-                    ]
-                  },
-                  "picture": {
-                    "type": [
-                      "null",
-                      "string"
-                    ]
-                  },
-                  "description": {
-                    "type": [
-                      "null",
-                      "string"
-                    ]
-                  },
-                  "image_crops": {"$ref": "ads_image_crops.json"},
-                  "name": {
-                    "type": [
-                      "null",
-                      "string"
-                    ]
-                  },
-                  "static_card": {
-                    "type": [
-                      "null",
-                      "boolean"
-                    ]
-                  },
-                  "video_id": {
-                    "type": [
-                      "null",
-                      "string"
-                    ]
-                  }
-                },
-                "type": [
-                  "null",
-                  "object"
-                ]
-              },
-              "type": [
-                "null",
-                "array"
-              ]
-            },
-            "multi_share_optimized": {
-              "type": [
-                "null",
-                "boolean"
-              ]
-            },
-            "link": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "image_crops": {"$ref": "ads_image_crops.json"},
-            "description": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "event_id": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "force_single_link": {
-              "type": [
-                "null",
-                "boolean"
-              ]
-            },
-            "multi_share_end_card": {
-              "type": [
-                "null",
-                "boolean"
-              ]
-            },
-            "message": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "image_hash": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "picture": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "name": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "offer_id": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "page_welcome_message": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "retailer_item_ids": {
-              "type": [
-                "null",
-                "array"
-              ],
-              "items": {
-                "type": "string"
-              }
-            },
-            "show_multiple_images": {
-              "type": [
-                "null",
-                "boolean"
-              ]
-            }
-          },
-          "type": [
-            "null",
-            "object"
-          ]
-        },
-        "page_id": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "photo_data": {
-          "type": [
-            "null",
-            "object"
-          ],
-          "properties": {
-            "branded_content_sponsor_page_id": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "branded_content_sponsor_relationship": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "caption": {
-              "type": "string"
-            },
-            "image_hash": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "page_welcome_message": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "url": {
-              "type": [
-                "null",
-                "string"
-              ]
-            }
-          }
-        },
-        "template_data": {
-          "properties": {
-            "additional_image_index": {
-              "type": [
-                "null",
-                "integer"
-              ]
-            },
-            "app_link_spec": {
-              "type": [
-                "null",
-                "object"
-              ],
-              "properties": {
-                "android": {
-                  "type": [
-                    "null",
-                    "array"
-                  ],
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "app_name": {
-                        "type": "string"
-                      },
-                      "class": {
-                        "type": "string"
-                      },
-                      "package": {
-                        "type": "string"
-                      },
-                      "url": {
-                        "type": "string"
-                      }
-                    }
-                  }
-                },
-                "ios": {
-                  "type": [
-                    "null",
-                    "array"
-                  ],
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "app_name": {
-                        "type": "string"
-                      },
-                      "app_store_id": {
-                        "type": "string"
-                      },
-                      "url": {
-                        "type": "string"
-                      }
-                    }
-                  }
-                },
-                "ipad": {
-                  "type": [
-                    "null",
-                    "array"
-                  ],
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "app_name": {
-                        "type": "string"
-                      },
-                      "app_store_id": {
-                        "type": "string"
-                      },
-                      "url": {
-                        "type": "string"
-                      }
-                    }
-                  }
-                },
-                "iphone": {
-                  "type": [
-                    "null",
-                    "array"
-                  ],
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "app_name": {
-                        "type": "string"
-                      },
-                      "app_store_id": {
-                        "type": "string"
-                      },
-                      "url": {
-                        "type": "string"
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "attachment_style": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "branded_content_sponsor_page_id": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "branded_content_sponsor_relationship": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "call_to_action": {
-              "properties": {
-                "value": {
-                  "properties": {
-                    "app_destination": {
-                      "type": [
-                        "null",
-                        "string"
-                      ]
-                    },
-                    "app_link": {
-                      "type": [
-                        "null",
-                        "string"
-                      ]
-                    },
-                    "application": {
-                      "type": [
-                        "null",
-                        "string"
-                      ]
-                    },
-                    "event_id": {
-                      "type": [
-                        "null",
-                        "string"
-                      ]
-                    },
-                    "lead_gen_form_id": {
-                      "type": [
-                        "null",
-                        "string"
-                      ]
-                    },
-                    "link": {
-                      "type": [
-                        "null",
-                        "string"
-                      ]
-                    },
-                    "link_caption": {
-                      "type": [
-                        "null",
-                        "string"
-                      ]
-                    },
-                    "link_format": {
-                      "type": [
-                        "null",
-                        "string"
-                      ]
-                    },
-                    "page": {
-                      "type": [
-                        "null",
-                        "string"
-                      ]
-                    },
-                    "product_link": {
-                      "type": [
-                        "null",
-                        "string"
-                      ]
-                    }
-                  },
-                  "type": [
-                    "null",
-                    "object"
-                  ]
-                },
-                "type": {
-                  "type": [
-                    "null",
-                    "string"
-                  ]
-                }
-              },
-              "type": [
-                "null",
-                "object"
-              ]
-            },
-            "caption": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "child_attachments": {
-              "items": {
-                "properties": {
-                  "image_hash": {
-                    "type": [
-                      "null",
-                      "string"
-                    ]
-                  },
-                  "link": {
-                    "type": [
-                      "null",
-                      "string"
-                    ]
-                  },
-                  "call_to_action": {
-                    "properties": {
-                      "value": {
-                        "properties": {
-                          "app_destination": {
-                            "type": [
-                              "null",
-                              "string"
-                            ]
-                          },
-                          "app_link": {
-                            "type": [
-                              "null",
-                              "string"
-                            ]
-                          },
-                          "application": {
-                            "type": [
-                              "null",
-                              "string"
-                            ]
-                          },
-                          "event_id": {
-                            "type": [
-                              "null",
-                              "string"
-                            ]
-                          },
-                          "lead_gen_form_id": {
-                            "type": [
-                              "null",
-                              "string"
-                            ]
-                          },
-                          "link": {
-                            "type": [
-                              "null",
-                              "string"
-                            ]
-                          },
-                          "link_caption": {
-                            "type": [
-                              "null",
-                              "string"
-                            ]
-                          },
-                          "link_format": {
-                            "type": [
-                              "null",
-                              "string"
-                            ]
-                          },
-                          "page": {
-                            "type": [
-                              "null",
-                              "string"
-                            ]
-                          },
-                          "product_link": {
-                            "type": [
-                              "null",
-                              "string"
-                            ]
-                          }
-                        },
-                        "type": [
-                          "null",
-                          "object"
-                        ]
-                      },
-                      "type": {
-                        "type": [
-                          "null",
-                          "string"
-                        ]
-                      }
-                    },
-                    "type": [
-                      "null",
-                      "object"
-                    ]
-                  },
-                  "caption": {
-                    "type": [
-                      "null",
-                      "string"
-                    ]
-                  },
-                  "picture": {
-                    "type": [
-                      "null",
-                      "string"
-                    ]
-                  },
-                  "description": {
-                    "type": [
-                      "null",
-                      "string"
-                    ]
-                  },
-                  "image_crops": {"$ref": "ads_image_crops.json"},
-                  "name": {
-                    "type": [
-                      "null",
-                      "string"
-                    ]
-                  },
-                  "static_card": {
-                    "type": [
-                      "null",
-                      "boolean"
-                    ]
-                  },
-                  "video_id": {
-                    "type": [
-                      "null",
-                      "string"
-                    ]
-                  }
-                },
-                "type": [
-                  "null",
-                  "object"
-                ]
-              },
-              "type": [
-                "null",
-                "array"
-              ]
-            },
-            "multi_share_optimized": {
-              "type": [
-                "null",
-                "boolean"
-              ]
-            },
-            "link": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "image_crops": {"$ref": "ads_image_crops.json"},
-            "description": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "event_id": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "force_single_link": {
-              "type": [
-                "null",
-                "boolean"
-              ]
-            },
-            "multi_share_end_card": {
-              "type": [
-                "null",
-                "boolean"
-              ]
-            },
-            "message": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "image_hash": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "picture": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "name": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "offer_id": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "page_welcome_message": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "retailer_item_ids": {
-              "type": [
-                "null",
-                "array"
-              ],
-              "items": {
-                "type": "string"
-              }
-            },
-            "show_multiple_images": {
-              "type": [
-                "null",
-                "boolean"
-              ]
-            }
-          },
-          "type": [
-            "null",
-            "object"
-          ]
-        },
-        "text_data": {
-          "type": [
-            "null",
-            "object"
-          ],
-          "properties": {
-            "message": {
-              "type": "string"
-            }
-          }
-        },
-        "video_data": {
-          "type": [
-            "null",
-            "object"
-          ],
-          "properties": {
-            "additional_image_index": {
-              "type": [
-                "null",
-                "integer"
-              ]
-            },
-            "branded_content_sponsor_page_id": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "branded_content_sponsor_relationship": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "call_to_action": {
-              "properties": {
-                "value": {
-                  "properties": {
-                    "app_destination": {
-                      "type": [
-                        "null",
-                        "string"
-                      ]
-                    },
-                    "app_link": {
-                      "type": [
-                        "null",
-                        "string"
-                      ]
-                    },
-                    "application": {
-                      "type": [
-                        "null",
-                        "string"
-                      ]
-                    },
-                    "event_id": {
-                      "type": [
-                        "null",
-                        "string"
-                      ]
-                    },
-                    "lead_gen_form_id": {
-                      "type": [
-                        "null",
-                        "string"
-                      ]
-                    },
-                    "link": {
-                      "type": [
-                        "null",
-                        "string"
-                      ]
-                    },
-                    "link_caption": {
-                      "type": [
-                        "null",
-                        "string"
-                      ]
-                    },
-                    "link_format": {
-                      "type": [
-                        "null",
-                        "string"
-                      ]
-                    },
-                    "page": {
-                      "type": [
-                        "null",
-                        "string"
-                      ]
-                    },
-                    "product_link": {
-                      "type": [
-                        "null",
-                        "string"
-                      ]
-                    }
-                  },
-                  "type": [
-                    "null",
-                    "object"
-                  ]
-                },
-                "type": {
-                  "type": [
-                    "null",
-                    "string"
-                  ]
-                }
-              },
-              "type": [
-                "null",
-                "object"
-              ]
-            },
-            "image_hash": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "image_url": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "link_description": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "message": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "offer_id": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "page_welcome_message": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "retailer_item_ids": {
-              "type": [
-                "null",
-                "array"
-              ],
-              "items": {
-                "type": "string"
-              }
-            },
-            "targeting": {"$ref": "targeting.json"},
-            "title": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "video_id": {
-              "type": [
-                "null",
-                "string"
-              ]
-            }
-          }
-        }
-      },
       "type": [
         "null",
-        "object"
+        "string"
       ]
     },
     "object_type": {
@@ -1278,7 +241,49 @@
         "string"
       ]
     },
+    "place_page_set_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "platform_customizations": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "playable_asset_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "portrait_customizations": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
     "product_set_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "recommender_settings": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "referral_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "source_instagram_media_id": {
       "type": [
         "null",
         "string"
@@ -1420,7 +425,7 @@
         "string"
       ]
     },
-    "image_hash": {
+    "title": {
       "type": [
         "null",
         "string"
@@ -1432,21 +437,17 @@
         "string"
       ]
     },
+    "use_page_actor_override": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
     "video_id": {
       "type": [
         "null",
         "string"
       ]
-    },
-    "link_url": {
-      "type": [
-        "null",
-        "string"
-      ]
     }
-  },
-  "type": [
-    "null",
-    "object"
-  ]
+  }
 }
