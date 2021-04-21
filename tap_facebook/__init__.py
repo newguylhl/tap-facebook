@@ -574,7 +574,6 @@ class AdsInsights(Stream):
             duration = time.time() - time_start
             job = job.api_get()
             status = job['async_status']
-            status = job['status']
             percent_complete = job['async_percent_completion']
 
             job_id = job['id']
