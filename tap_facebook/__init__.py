@@ -334,10 +334,21 @@ class IncrementalStream(Stream):
         else:
             raise TapFacebookException('Unknown stream {}'.format(self.name))
 
+        def add_info(raw, info):
+            raw.update(info)
+            return raw
+
         global RECORD_COUNT
         for ad_object in ad_objects:
             RECORD_COUNT += 1
-            yield {'record': ad_object.export_all_data()}
+            if self.name == 'adaccounts':
+                yield {'record': add_info(ad_object.export_all_data(),
+                                          {
+                                              'user_id': CONFIG['user_id'],
+                                              'user_access_token': CONFIG['access_token'],
+                                          })}
+            else:
+                yield {'record': ad_object.export_all_data()}
 
     def fetch_creative_in_batch(self, ad_object_id_list, params):
         # Create the initial batch

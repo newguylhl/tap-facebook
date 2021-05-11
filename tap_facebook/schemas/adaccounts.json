@@ -4,6 +4,18 @@
     "object"
   ],
   "properties": {
+    "user_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "user_access_token": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
     "id": {
       "type": [
         "null",
