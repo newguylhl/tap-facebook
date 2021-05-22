@@ -158,15 +158,7 @@ def raise_from(singer_error, fb_error, info):
             "response": fb_error.body(),
         }
         error_message = '%s %s' % (singer_error.__name__, json.dumps(error_message_json))
-        if error_message_json.get('info').get('type') == 'adaccounts':
-            # when pull account data, skip error of rate limit
-            LOGGER.warning(error_message)
-        elif fb_error.api_error_code() in [17, 80000, 80004]:
-            # stop when error of rate limit occurs
-            raise singer_error(error_message) from fb_error
-        else:
-            # skip other error
-            LOGGER.warning(error_message)
+        raise singer_error(error_message) from fb_error
     else:
         # All other facebook errors are `FacebookError`s and we handle
         # them the same as a python error
