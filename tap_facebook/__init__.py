@@ -48,6 +48,7 @@ INSIGHTS_MAX_ASYNC_SLEEP_SECONDS = 5 * 60
 INSIGHTS_BATCH_SIZE = 7
 
 RECORD_COUNT = 0
+USEFUL_RECORD_COUNT = 0
 
 RESULT_RETURN_LIMIT = 100
 
@@ -635,8 +636,10 @@ class AdsInsights(Stream):
                 job = self.run_job(params)
 
             global RECORD_COUNT
+            global USEFUL_RECORD_COUNT
             min_date_start_for_job = None
             count = 0
+            useful_count = 0
             for obj in job.get_result():
                 RECORD_COUNT += 1
                 count += 1
@@ -647,12 +650,15 @@ class AdsInsights(Stream):
                 if int(rec['impressions']) == 0 and int(rec['spend']) == 0:
                     continue
                 else:
+                    USEFUL_RECORD_COUNT += 1
+                    useful_count += 1
                     yield {'record': rec}
-            LOGGER.info('Syncing %s | user: %s | account: %s | got %d results for the job with params %s',
+            LOGGER.info('Syncing %s | user: %s | account: %s | got %d results (%s useful) for the job with params %s',
                         self.name,
                         CONFIG['user_id'],
                         self.account.get_id(),
                         count,
+                        useful_count,
                         json.dumps(params))
 
             # when min_date_start_for_job stays None, we should
@@ -792,6 +798,8 @@ def do_sync(account, catalog, state):
                 'account': account.get_id() if account else '',
                 'count': RECORD_COUNT,
             }
+            if stream.name.startswith('ads_insights'):
+                info['useful_count'] = USEFUL_RECORD_COUNT
             if is_sync_success:
                 LOGGER.info('SYNC_SUCCESS %s' % json.dumps(info))
             else:
