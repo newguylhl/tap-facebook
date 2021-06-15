@@ -643,7 +643,11 @@ class AdsInsights(Stream):
                 rec = obj.export_all_data()
                 if not min_date_start_for_job or rec['date_stop'] < min_date_start_for_job:
                     min_date_start_for_job = rec['date_stop']
-                yield {'record': rec}
+                # skip loading useless insights records
+                if int(rec['impressions']) == 0 and int(rec['spend']) == 0:
+                    continue
+                else:
+                    yield {'record': rec}
             LOGGER.info('Syncing %s | user: %s | account: %s | got %d results for the job with params %s',
                         self.name,
                         CONFIG['user_id'],
