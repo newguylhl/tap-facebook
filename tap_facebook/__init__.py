@@ -539,9 +539,14 @@ class AdsInsights(Stream):
         global INSIGHTS_BATCH_SIZE
         # Some automatic fields (primary-keys) cannot be used as 'fields' query params.
         while buffered_start_date <= end_date:
+            loop_days = (end_date - buffered_start_date).days
+            if loop_days < INSIGHTS_BATCH_SIZE:
+                loops = loop_days + 1
+            else:
+                loops = INSIGHTS_BATCH_SIZE
             # Pull latest data first
             time_ranges = list()
-            for i in range(INSIGHTS_BATCH_SIZE):
+            for i in range(loops):
                 time_ranges.append(
                     {
                         'since': end_date.subtract(days=i).to_date_string(),
@@ -558,7 +563,10 @@ class AdsInsights(Stream):
                 'action_attribution_windows': list(self.action_attribution_windows),
                 'time_ranges': time_ranges,
             }
-            end_date = end_date.subtract(days=INSIGHTS_BATCH_SIZE)
+            if loop_days < INSIGHTS_BATCH_SIZE:
+                break
+            else:
+                end_date = end_date.subtract(days=INSIGHTS_BATCH_SIZE)
 
     @retry_pattern(backoff.expo, (FacebookRequestError, InsightsJobTimeout, FacebookBadObjectError, TypeError), max_tries=5, factor=5)
     def run_job(self, params):
