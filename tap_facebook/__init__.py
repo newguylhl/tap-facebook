@@ -64,6 +64,7 @@ STREAMS = [
     'ads',
     'adsets',
     'campaigns',
+    'accounts_insights',
     'ads_insights',
     "ads_insights_age_gender",
     "ads_insights_device_platform",
@@ -672,6 +673,9 @@ class AdsInsights(Stream):
 
 
 INSIGHTS_BREAKDOWNS_OPTIONS = {
+    'accounts_insights': {
+        "breakdowns": []
+    },
     'ads_insights': {
         "breakdowns": []
     },
@@ -709,7 +713,11 @@ def initialize_stream(account, catalog_entry, state):  # pylint: disable=too-man
     stream_alias = catalog_entry.stream_alias
 
     if name in INSIGHTS_BREAKDOWNS_OPTIONS:
-        return AdsInsights(name, account, stream_alias, catalog_entry, state=state,
+        if name == 'accounts_insights':
+            level = 'account'
+        else:
+            level = 'ad'
+        return AdsInsights(name, account, stream_alias, catalog_entry, state=state, level=level,
                            options=INSIGHTS_BREAKDOWNS_OPTIONS[name])
     elif name == 'campaigns':
         return Campaigns(name, account, stream_alias, catalog_entry, state=state)
