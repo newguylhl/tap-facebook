@@ -503,7 +503,7 @@ def advance_bookmark(stream, bookmark_key, date):
 @attr.s
 class AdsInsights(Stream):
     field_class = adsinsights.AdsInsights.Field
-    base_properties = ['campaign_id', 'adset_id', 'ad_id', 'date_start']
+    base_properties = ['account_id', 'date_start', 'date_stop']
 
     state = attr.ib()
     options = attr.ib()
